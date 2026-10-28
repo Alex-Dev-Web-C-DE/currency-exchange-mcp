@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Alex-Dev-Web-C-DE/currency-exchange-api",
+  "title": "Currency Exchange",
+  "description": "Real-time foreign exchange rates for AI agents and trading systems.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://currency-exchange-api.boring-saas-infra.workers.dev/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "API key. Get one at https://jsonexlab.com/",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/Alex-Dev-Web-C-DE/currency-exchange-api",
+    "source": "github"
+  }
+}
